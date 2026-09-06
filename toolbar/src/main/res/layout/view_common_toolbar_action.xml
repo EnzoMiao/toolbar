@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/commonToolbarActionRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:id="@+id/commonToolbarActionContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/commonToolbarActionIcon"
+            android:layout_width="@dimen/common_toolbar_icon_size"
+            android:layout_height="@dimen/common_toolbar_icon_size"
+            android:importantForAccessibility="no"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/commonToolbarActionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:importantForAccessibility="no"
+            android:maxLines="1"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/commonToolbarActionBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_toolbar_badge_min_size"
+        android:layout_gravity="top|start"
+        android:background="@drawable/bg_common_toolbar_badge"
+        android:gravity="center"
+        android:importantForAccessibility="no"
+        android:minWidth="@dimen/common_toolbar_badge_min_size"
+        android:paddingHorizontal="@dimen/common_toolbar_badge_padding_horizontal"
+        android:visibility="gone" />
+</FrameLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="commonToolbarStyle" format="reference" />
+    <attr name="ct_title" format="string" />
+    <attr name="ct_subtitle" format="string" />
+    <attr name="ct_titleAlignment" format="enum">
+        <enum name="center" value="0" />
+        <enum name="start" value="1" />
+    </attr>
+    <attr name="ct_navigationIcon" format="reference" />
+    <attr name="ct_navigationText" format="string" />
+    <attr name="ct_navigationContentDescription" format="string" />
+    <attr name="ct_insetMode" format="enum">
+        <enum name="none" value="0" />
+        <enum name="edgeToEdge" value="1" />
+    </attr>
+    <attr name="ct_dividerVisible" format="boolean" />
+    <attr name="ct_statusBarBackground" format="color|reference" />
+    <attr name="ct_contentMinHeight" format="dimension" />
+    <attr name="ct_contentPaddingStart" format="dimension" />
+    <attr name="ct_contentPaddingEnd" format="dimension" />
+    <attr name="ct_titleTextAppearance" format="reference" />
+    <attr name="ct_subtitleTextAppearance" format="reference" />
+    <attr name="ct_actionTextAppearance" format="reference" />
+    <attr name="ct_badgeTextAppearance" format="reference" />
+    <attr name="ct_iconTint" format="color" />
+    <attr name="ct_rippleColor" format="color" />
+    <attr name="ct_dividerColor" format="color" />
+    <attr name="ct_dividerHeight" format="dimension" />
+    <attr name="ct_badgeBackgroundColor" format="color" />
+    <attr name="ct_actionMinTouchSize" format="dimension" />
+    <attr name="ct_actionIconSize" format="dimension" />
+    <attr name="ct_actionTextSize" format="dimension" />
+    <attr name="ct_actionSpacing" format="dimension" />
+    <attr name="ct_actionContentSpacing" format="dimension" />
+    <attr name="ct_badgeHorizontalOffset" format="dimension" />
+    <attr name="ct_badgeVerticalOffset" format="dimension" />
+    <attr name="ct_themeOverlay" format="reference" />
+    <attr name="ct_insetConflictDiagnostics" format="boolean" />
+
+    <declare-styleable name="CommonToolbar">
+        <attr name="android:background" />
+        <attr name="ct_themeOverlay" />
+        <attr name="ct_insetConflictDiagnostics" />
+        <attr name="ct_title" />
+        <attr name="ct_subtitle" />
+        <attr name="ct_titleAlignment" />
+        <attr name="ct_navigationIcon" />
+        <attr name="ct_navigationText" />
+        <attr name="ct_navigationContentDescription" />
+        <attr name="ct_insetMode" />
+        <attr name="ct_dividerVisible" />
+        <attr name="ct_statusBarBackground" />
+        <attr name="ct_contentMinHeight" />
+        <attr name="ct_contentPaddingStart" />
+        <attr name="ct_contentPaddingEnd" />
+        <attr name="ct_titleTextAppearance" />
+        <attr name="ct_subtitleTextAppearance" />
+        <attr name="ct_actionTextAppearance" />
+        <attr name="ct_badgeTextAppearance" />
+        <attr name="ct_iconTint" />
+        <attr name="ct_rippleColor" />
+        <attr name="ct_dividerColor" />
+        <attr name="ct_dividerHeight" />
+        <attr name="ct_badgeBackgroundColor" />
+        <attr name="ct_actionMinTouchSize" />
+        <attr name="ct_actionIconSize" />
+        <attr name="ct_actionTextSize" />
+        <attr name="ct_actionSpacing" />
+        <attr name="ct_actionContentSpacing" />
+        <attr name="ct_badgeHorizontalOffset" />
+        <attr name="ct_badgeVerticalOffset" />
+    </declare-styleable>
+</resources>

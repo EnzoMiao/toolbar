@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.enzo.toolbar.CommonToolbar
+        android:id="@+id/commonToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ct_insetMode="edgeToEdge"
+        app:ct_title="CommonToolbar Demo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/commonToolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/btnBasic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="基本用法 (标题/副标题/返回)" />
+
+            <Button
+                android:id="@+id/btnActions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="添加右侧动作按钮" />
+
+            <Button
+                android:id="@+id/btnBadge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="动态更新 Badge" />
+
+            <Button
+                android:id="@+id/btnAlignment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="切换对齐方式 (居中/靠左)" />
+
+            <Button
+                android:id="@+id/btnAppearance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="应用运行时外观 (换肤)" />
+
+            <Button
+                android:id="@+id/btnCustomView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="自定义中间内容" />
+
+            <Button
+                android:id="@+id/btnDivider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="显示/隐藏分割线" />
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="重置" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

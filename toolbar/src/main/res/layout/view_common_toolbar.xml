@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/commonToolbarStatusBarSpacer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:importantForAccessibility="no" />
+
+    <com.enzo.toolbar.internal.ToolbarContentLayout
+        android:id="@+id/commonToolbarContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/common_toolbar_content_min_height">
+
+        <com.enzo.toolbar.internal.ToolbarActionView
+            android:id="@+id/commonToolbarNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/commonToolbarCenter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/commonToolbarStandardCenter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/commonToolbarTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/commonToolbarSubtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/commonToolbarCustomCenter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <com.enzo.toolbar.internal.ToolbarActionsLayout
+            android:id="@+id/commonToolbarActions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.enzo.toolbar.internal.ToolbarContentLayout>
+
+    <View
+        android:id="@+id/commonToolbarDivider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_toolbar_divider_height"
+        android:importantForAccessibility="no"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_toolbar_content_min_height">56dp</dimen>
+    <dimen name="common_toolbar_content_padding_horizontal">4dp</dimen>
+    <dimen name="common_toolbar_action_min_touch_size">48dp</dimen>
+    <dimen name="common_toolbar_icon_size">24dp</dimen>
+    <dimen name="common_toolbar_action_spacing">4dp</dimen>
+    <dimen name="common_toolbar_badge_dot_size">8dp</dimen>
+    <dimen name="common_toolbar_badge_min_size">16dp</dimen>
+    <dimen name="common_toolbar_badge_padding_horizontal">4dp</dimen>
+    <dimen name="common_toolbar_divider_height">1dp</dimen>
+</resources>

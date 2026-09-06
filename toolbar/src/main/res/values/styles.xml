@@ -1,0 +1,48 @@
+<resources>
+    <style name="TextAppearance.CommonToolbar.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="TextAppearance.CommonToolbar.Subtitle" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <style name="TextAppearance.CommonToolbar.Action" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="TextAppearance.CommonToolbar.Badge" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">?attr/colorOnError</item>
+    </style>
+
+    <style name="Widget.CommonToolbar" parent="android:Widget">
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="ct_contentMinHeight">@dimen/common_toolbar_content_min_height</item>
+        <item name="ct_contentPaddingStart">@dimen/common_toolbar_content_padding_horizontal</item>
+        <item name="ct_contentPaddingEnd">@dimen/common_toolbar_content_padding_horizontal</item>
+        <item name="ct_titleTextAppearance">@style/TextAppearance.CommonToolbar.Title</item>
+        <item name="ct_subtitleTextAppearance">@style/TextAppearance.CommonToolbar.Subtitle</item>
+        <item name="ct_actionTextAppearance">@style/TextAppearance.CommonToolbar.Action</item>
+        <item name="ct_badgeTextAppearance">@style/TextAppearance.CommonToolbar.Badge</item>
+        <item name="ct_iconTint">?attr/colorOnSurface</item>
+        <item name="ct_rippleColor">?attr/colorControlHighlight</item>
+        <item name="ct_dividerColor">?attr/colorOutlineVariant</item>
+        <item name="ct_dividerHeight">@dimen/common_toolbar_divider_height</item>
+        <item name="ct_badgeBackgroundColor">?attr/colorError</item>
+        <item name="ct_actionMinTouchSize">@dimen/common_toolbar_action_min_touch_size</item>
+        <item name="ct_actionIconSize">@dimen/common_toolbar_icon_size</item>
+        <item name="ct_actionSpacing">@dimen/common_toolbar_action_spacing</item>
+        <item name="ct_actionContentSpacing">@dimen/common_toolbar_action_spacing</item>
+        <item name="ct_badgeHorizontalOffset">0dp</item>
+        <item name="ct_badgeVerticalOffset">0dp</item>
+        <item name="ct_titleAlignment">center</item>
+        <item name="ct_insetMode">none</item>
+        <item name="ct_dividerVisible">false</item>
+    </style>
+
+</resources>
