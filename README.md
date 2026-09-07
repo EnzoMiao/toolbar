@@ -29,7 +29,7 @@ dependencyResolutionManagement {
 ```kotlin
 dependencies {
   implementation(
-    "com.github.EnzoMiao.toolbar:toolbar:v1.0.0"
+    "com.github.EnzoMiao:toolbar:v1.0.0"
   )
 }
 ```
